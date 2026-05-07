@@ -1,5 +1,14 @@
+import { Show, SignInButton, UserButton } from "@clerk/nextjs"
+
 export default function Home() {
     return (
-        <h1>Hello!</h1>
+        <>
+            <Show when="signed-in">
+                <UserButton />
+            </Show>
+            <Show when="signed-out">
+                <SignInButton />
+            </Show>
+        </>
     )
 }
