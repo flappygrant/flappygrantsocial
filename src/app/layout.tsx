@@ -9,7 +9,7 @@ const roboto = Roboto({
 
 export const metadata: Metadata = {
     title: "FlappyGrant Social",
-    description: "Socialize with FlappyGrant fans and general users!",
+    description: "Doomscroll through user-uploaded GIFs!",
 }
 
 export default function RootLayout({
