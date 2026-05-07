@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import { Roboto } from "next/font/google"
 import { ClerkProvider } from "@clerk/nextjs"
+import { dark } from "@clerk/themes"
 import "@/styles/globals.css"
 
 const roboto = Roboto({
@@ -24,7 +25,7 @@ export default function RootLayout({
             className={`${roboto.variable} antialiased`}
         >
             <body>
-                <ClerkProvider>
+                <ClerkProvider appearance={dark}>
                     {children}
                 </ClerkProvider>
             </body>
